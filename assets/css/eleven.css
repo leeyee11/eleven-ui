@@ -1,0 +1,359 @@
+/*mobile-phone*/
+@media screen and (max-width: 600px){
+	html,body,div,span,input,button,p,input,select{
+		margin: 0;
+		padding: 0;
+		font-size: 10pt;
+	}
+	.el-container{
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		min-height: 100%;
+	}
+}
+/*ipad or android-pad*/
+@media screen and (min-width: 600px) and (max-width: 1024px){
+	html,body,div,span,input,button,p,input,select{
+		margin: 0;
+		padding: 0;
+		font-size: 12pt;
+	}
+	.el-container{
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		min-height: 100%;
+	}
+}
+/*computer screen*/
+@media screen and (min-width: 1025px){
+	html,body,div,span,input,p,input,button,select{
+		margin: 0;
+		padding: 0;
+		font-size: 12pt;
+	}
+	.el-container{
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		max-width: 1024px;
+		margin-left: calc((100% - 1024px) / 2) ;
+		min-height: 100%;
+	}
+}
+*{
+	box-sizing: border-box;
+	position: relative;
+}
+a{
+	color: #ffffff;
+	text-decoration: none;
+}
+html,body{
+	height: 100%;
+}
+hr{
+	border-color: #f6f6f6;
+}
+p.el-super{
+	padding: 0.25em;
+}
+p.el-important{
+	padding: 0.5em;	
+}
+p.el-highlight{
+	font-size: 18pt;
+}
+.el-white{
+	color: #ffffff!important;
+}
+.el-black{
+	color: #080808!important;
+}
+.el-error{
+	color: #bb4444!important;
+}
+.el-hint{
+	color: #dfdfdf!important;
+}
+.el-bright{
+	background-color: #ffffff!important;
+	color: #080808!important;
+}
+.el-silver{
+	background-color: #efefef!important;
+	color: #080808!important;
+}
+.el-dark{
+	background-color: #080808!important;
+	color: #ffffff!important;
+}
+.el-night{
+	background-color: rgb(29,31,34)!important;
+	color: #ffffff!important;
+}
+.el-info{
+	background-color: #4466af!important;
+	color: #ffffff!important;
+}
+.el-danger{
+	background-color: #bb4444!important;
+	color: #ffffff!important;
+}
+.el-success{
+	background-color: #449966!important;
+	color: #ffffff!important;
+}
+.el-warning{
+	background-color: #ee6644!important;
+	color: #ffffff!important;
+}
+
+.el-box-light-inset{
+	box-shadow: 1px 1px 5px 1px rgba(255,255,255,0.1) inset;
+}
+.el-box-light{
+	box-shadow: 1px 1px 5px 1px rgba(255,255,255,0.1);
+}
+
+.el-box-shadow-inset{
+	box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1) inset;
+}
+.el-box-shadow{
+	box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
+}
+
+.el-text-light{
+	text-shadow: 1px 1px 5px white;
+}
+.el-text-shadow{
+	text-shadow: 1px 1px 5px black;
+}
+
+div.el-nav,nav.el-nav{
+	width: 100%;
+	height: 3em;
+	padding: 1em;
+	font-weight: bold;
+	line-height: 1em;
+	z-index: 10;
+}
+div.el-bar{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #cfcfcf;
+	border-radius: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 1em;
+	width: 100%;
+	height: 3em;
+	padding: 1em;
+}
+.el-fixed-top{
+	position: fixed;
+}
+div.el-cover{
+	width: 100%;
+	text-align: center;
+	z-index: 9;
+	overflow: hidden;
+}
+div.el-panel{
+	display: block;
+	width: 100%;
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-color: #f6f6f6;
+	border:1px solid #cfcfcf;
+	color: #080808;
+	border-radius: 5px;
+}
+div.el-cover img{
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+	bottom:0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: -1;
+	/*change baseline to vertical-align*/
+	vertical-align: middle;
+}
+
+code.el-code{
+	display: block;
+	width: 100%;
+	padding: 1em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: rgb(29,31,34);
+	color: #ffffff;
+	border:1px solid #cfcfcf;
+	border-radius: 5px;
+}
+
+.el-button{
+	min-width: 8em;
+	outline: none;
+	display: inline-block;
+	height: 3em;
+	line-height: 1em;
+	padding: 1em;
+	background-color: #ffffff;
+	color: #080808;
+	border:1px solid #cfcfcf;
+	border-radius: 5px;
+	margin: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+	transition: box-shadow 0.3s;
+}
+.el-button:active{
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+}
+select.el-select{
+	background-color: #ffffff;
+	border: 1px solid #cfcfcf;
+	height: 2em;
+	padding-left: 0.5em;
+	padding-right: : 0.5em;
+	line-height: 2em;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1) inset;
+}
+input.el-input{
+	vertical-align: middle;
+	background-color: white;
+}
+input[type='text'].el-input,input[type='password'].el-input,input[type='email'].el-input,input[type='number'].el-input,input[type='date'].el-input{
+	background-color: #ffffff;
+	border: 1px solid #cfcfcf;
+	border-radius: 5px;
+	min-width: 14em;
+	height: 2em;
+	line-height: 2em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1) inset;
+}
+input[type='range'].el-input{
+	padding:0px;
+	height: 6px;
+	appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    background-color: #ffffff;
+    border:1px solid #cfcfcf;
+    min-width: 14em;
+    border-radius: 10px; /*这个属性设置使填充进度条时的图形为圆角*/
+}
+input[type=range].el-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    margin-top: 0; /*使滑块超出轨道部分的偏移量相等*/
+    background-color: #ffffff; 
+    border-radius: 50%; /*外观设置为圆形*/
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+input[type='checkbox'].el-input{
+	appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance:none;
+	background-color: #ffffff;
+	border: 1px solid #cfcfcf;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1) inset;
+	height: 18px;
+	width: 18px;
+}
+input[type='checkbox'].el-input:checked::after{
+	content: "\2713";
+	text-align: center;
+	font-size: 10pt;
+	vertical-align: middle;
+	position: absolute;
+	z-index: -1;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+input[type='radio'].el-input{
+	appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance:none;
+	background-color: #ffffff;
+	border: 1px solid #cfcfcf;
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1) inset;
+	height: 18px;
+	width: 18px;
+}
+input[type='radio'].el-input:checked::after{
+	/*content: "\263B";*/
+	content: "\2713";
+	text-align: center;
+	font-size: 10pt;
+	vertical-align: middle;
+	position: absolute;
+	z-index: -1;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+input[type='file'].el-input{
+	appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    border:1px solid #cfcfcf;
+    content: "";
+    width: 14em;
+    border-radius: 5px;
+
+}
+
+
+.el-small{
+	font-size: 10pt!important;
+}
+.el-middel{
+	font-size: 12pt!important;
+}
+.el-large{
+	font-size: 14pt!important;
+}
+.el-highlight{
+	font-size: 18pt!important;
+}
+.el-important{
+	font-size: 24pt!important;
+}
+.el-super{
+	font-size: 72pt!important;
+}
+.el-square{
+	border-radius: 0px!important;
+}
+.el-round{
+	border-radius: 1.5em!important; 
+}
+.el-borderless{
+	border: none!important;
+}
+.el-ghost{
+	background-color: #ffffff!important;
+	color:#080808!important; 
+	transition: all 0.6s;
+}
+.el-ghost:hover{
+	background-color: #080808!important;
+	color:#ffffff!important; 
+}
+
+
+

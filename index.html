@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LeeYee's UI Library</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1,user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="./assets/css/sublime.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/eleven.css">
+</head>
+<body>
+	<nav class="el-nav el-dark">
+		<span>UI·Library</span>
+	</nav>
+	<div class="el-cover el-dark el-box-shadow">
+		<div class="el-container">
+			<p class="el-super">El·UI</p>	
+			<p class="el-highlight">Light  ·  Nice  ·  Fast</p>
+			<p class="el-hint">
+				Suit for kinds of devices, including pc,laptop, ipad and mobile phone
+				Only need to specify classes for each elements can you build Web.Start to customize your own Web UI.
+			</p>
+			<br>
+			<img  src="./assets/img/devices.png">
+		</div>
+	</div>
+	<div class="el-container">
+		<h1>.el-nav</h1>
+		<div class="el-nav el-dark">This is a nav</div>
+		<pre><code class="el-code">
+&lt;!-- el-nav --&gt;
+&lt;div class="el-nav el-dark"&gt;
+	This is a nav
+&lt;/div&gt;
+		</code></pre>
+
+		<br/>
+
+		<h1>.el-cover</h1>
+		<div class="el-cover el-dark" >
+			<p class="el-important">iMac Pro</p>
+			<p class="el-highlight">Power to the pro.</p>
+			<img src="./assets/img/mac.png">
+		</div>
+		<pre><code class="el-code">
+&lt;!-- el-cover --&gt;
+&lt;div class="el-cover el-dark"&gt;
+    &lt;h1&gt;Mac Pro&lt;/h1&gt;
+    &lt;img src="./assets/img/cover-mac.png"/&gt;
+&lt;/div&gt;
+		</code></pre>
+
+		<br/>
+
+		<h1>.el-container</h1>
+		<p>For devices which screen width less than 1024px width is 100%, Otherwise width is 1024px</p>
+		<pre><code class="el-code">
+&lt;!-- el-container --&gt;
+&lt;div class="el-container"&gt;
+    ...
+&lt;/div&gt;
+		</code></pre>
+		<br/>
+
+		<h1>.el-bar</h1>
+		<div class="el-bar el-bright">
+			This is a bright bar
+		</div>
+		<div class="el-bar el-silver">
+			This is a silver bar
+		</div>
+		<div class="el-bar el-dark">
+			This is a dark bar
+		</div>
+		<div class="el-bar el-danger">
+			This is a danger bar
+		</div>
+		<div class="el-bar el-warning">
+			This is a warning bar
+		</div>
+		<div class="el-bar el-success">
+			This is a success bar
+		</div>
+		<div class="el-bar el-info">
+			This is a info bar
+		</div>
+		<pre><code class="el-code">
+&lt;!-- el-bar --&gt;
+&lt;div class="el-bar el-light"&gt;
+    This is a light bar
+&lt;/div&gt;
+&lt;div class="el-bar el-silver"&gt;
+    This is a silver bar
+&lt;/div&gt;
+&lt;div class="el-bar el-dark"&gt;
+    This is a dark bar
+&lt;/div&gt;
+&lt;div class="el-bar el-danger"&gt;
+    This is a danger bar
+&lt;/div&gt;
+&lt;div class="el-bar el-warning"&gt;
+    This is a warning bar
+&lt;/div&gt;
+&lt;div class="el-bar el-success"&gt;
+    This is a success bar
+&lt;/div&gt;
+&lt;div class="el-bar el-info"&gt;
+    This is a info bar
+&lt;/div&gt;
+		</code></pre>
+		<br/>
+
+		<h1>.el-panel</h1>
+		<div class="el-panel">
+			This is a panel
+			You can put things here
+		</div>
+		<pre><code class="el-code">
+&lt;!-- el-panel --&gt;
+&lt;div class="el-panel"&gt;
+    This is a panel
+    You can put things here
+&lt;/div&gt;
+		</code></pre>
+		<br/>
+		<h1>.el-button</h1>
+		<div class="el-panel">
+			<button class="el-button el-bright">bright</button>
+			<button class="el-button el-dark">dark</button>
+			<button class="el-button el-danger">danger</button>
+			<button class="el-button el-warning">warning</button>
+			<button class="el-button el-success">success</button>
+			<button class="el-button el-info">info</button>
+		</div>
+		<pre><code class="el-code">
+&lt;!-- el-button with different background color --&gt;
+&lt;div class="el-panel"&gt;
+    &lt;button class="el-button el-bright"&gt;bright&lt;/button&gt;
+    &lt;button class="el-button el-dark"&gt;dark&lt;/button&gt;
+    &lt;button class="el-button el-danger"&gt;danger&lt;/button&gt;
+    &lt;button class="el-button el-warning"&gt;warning&lt;/button&gt;
+    &lt;button class="el-button el-success"&gt;success&lt;/button&gt;
+    &lt;button class="el-button el-info"&gt;info&lt;/button&gt;
+&lt;/div&gt;
+		</code></pre>
+		<div class="el-panel">
+			<button class="el-button el-round">round</button>
+			<button class="el-button el-square">square</button>
+			<button class="el-button el-borderless">borderless</button>
+			<button class="el-button el-ghost">ghost</button>
+		</div>
+		<pre><code class="el-code">
+&lt;!-- el-button with different size --&gt;
+&lt;div class="el-panel"&gt;
+    &lt;button class="el-button el-round"&gt;round&lt;/button&gt;
+    &lt;button class="el-button el-square"&gt;square&lt;/button&gt;
+    &lt;button class="el-button el-borderless"&gt;borderless&lt;/button&gt;
+    &lt;button class="el-button el-ghost"&gt;ghost&lt;/button&gt;
+&lt;/div&gt;
+		</code></pre>
+		<div class="el-panel">
+			<button class="el-button el-small">small</button>
+			<button class="el-button el-middle">middle</button>
+			<button class="el-button el-large">large</button>
+			<button class="el-button el-highlight">highlight</button>
+		</div>
+		<pre><code class="el-code">
+&lt;!-- el-button with different shape --&gt;
+&lt;div class="el-panel"&gt;
+    &lt;button class="el-button el-small"&gt;small&lt;/button&gt;
+    &lt;button class="el-button el-middle"&gt;middle&lt;/button&gt;
+    &lt;button class="el-button el-large"&gt;large&lt;/button&gt;
+    &lt;button class="el-button el-highlight"&gt;highlight&lt;/button&gt;
+&lt;/div&gt;
+		</code></pre>
+		<br/>
+
+		<h1>.el-select</h1>
+		<div class="el-panel">
+			<label>Where are you come from ?</label>
+			<select class="el-select">
+				<option value="0" selected="selected">China</option>
+				<option value="1">USA</option>
+				<option value="2">England</option>
+				<option value="3">Canada</option>
+				<option value="4">Japan</option>
+				<option value="5">Korea</option>
+			</select>
+		</div>
+		<pre><code class="el-code">
+&lt;!-- el-select --&gt;
+&lt;div class="el-panel"&gt;
+    &lt;label&gt;Where are you come from ?&lt;/label&gt;
+    &lt;select class="el-select"&gt;
+        &lt;option value="0" selected="selected">China&lt;/option&gt;
+        &lt;option value="1"&gt;USA&lt;/option&gt;
+        &lt;option value="2"&gt;England&lt;/option&gt;
+        &lt;option value="3"&gt;Canada&lt;/option&gt;
+        &lt;option value="4"&gt;Japan&lt;/option&gt;
+        &lt;option value="5"&gt;Korea&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
+		</code></pre>
+
+		<h1>.el-input</h1>
+		<div class="el-panel">
+			<table style="border-spacing: 10px;">
+				<tr>
+					<td><div align="right">text</div></td>
+					<td><input type="text" name="el-input-text" class="el-input"/></td>
+				</tr>
+				<tr>
+					<td><div align="right">email</div></td>
+					<td><input type="email" name="el-input-email" class="el-input"/></td>
+				</tr>
+				<tr>
+					<td><div align="right">password</div></td>
+					<td><input type="password" name="el-input-password" class="el-input"/></td>
+				</tr>
+				<tr>
+					<td><div align="right">number</div></td>
+					<td><input type="number" name="el-input-number" class="el-input"/></td>
+				</tr>
+				<tr>
+					<td><div align="right">date</div></td>
+					<td><input type="date" name="el-input-date" class="el-input"/></td>
+				</tr>
+				<tr>
+					<td><div align="right">range</div></td>
+					<td><input type="range" name="el-input-range" class="el-input"/></td>
+				</tr>
+				<tr>
+					<td><div align="right">checkbox</div></td>
+					<td><input type="checkbox" name="el-input-checkbox" class="el-input"/>
+						<label>check here</label>
+					</td>
+				</tr>
+				<tr>
+					<td><div align="right">radio</div></td>
+					<td>
+						<input type="radio" checked="checked" name="el-input-radio" class="el-input"/>
+						<label>Yes</label>
+						<input type="radio" name="el-input-radio" class="el-input"/>
+						<label>No</label>
+					</td>
+				</tr>
+				<tr>
+					<td><div align="right">file</td>
+					<td><input type="file" name="el-input-file" class="el-input"></td>
+				</tr>
+			</table>
+		</div>
+		<pre><code class="el-code">
+&lt;!-- el-input --&gt;
+&lt;div class="el-panel"&gt;
+    &lt;table style="border-spacing: 10px;"&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div align="right"&gt;text&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input type="text" name="el-input-text" class="el-input"/&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div align="right"&gt;email&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input type="email" name="el-input-email" class="el-input"/&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div align="right"&gt;password&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input type="password" name="el-input-password" class="el-input"/&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div align="right"&gt;number&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input type="number" name="el-input-number" class="el-input"/&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div align="right"&gt;date&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input type="date" name="el-input-date" class="el-input"/&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div align="right"&gt;range&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input type="range" name="el-input-range" class="el-input"/&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div align="right"&gt;checkbox&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input type="checkbox" name="el-input-checkbox" class="el-input"/&gt;
+                &lt;label&gt;check here&lt;/label&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div align="right"&gt;radio&lt;/div&gt;&lt;/td&gt;
+            &lt;td&gt;
+                &lt;input type="radio" checked="checked" name="el-input-radio" class="el-input"/&gt;
+                &lt;label&gt;Yes&lt;/label&gt;
+                &lt;input type="radio" name="el-input-radio" class="el-input"/&gt;
+                &lt;label&gt;No&lt;/label&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;div align="right"&gt;file&lt;/td&gt;
+            &lt;td&gt;&lt;input type="file" name="el-input-file" class="el-input"&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+
+		</code></pre>
+		<br/>
+
+		<h1>.el-code</h1>
+		<div class="el-panel el-silver">
+			<pre><code class="el-code">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main(){
+    cout&lt;&lt;"hello wolrd"&lt;&lt;endl;
+    return 0;
+}
+			</code></pre>
+		</div>
+		<pre>
+			<code class="el-code">
+&lt;!-- el-code --&gt;
+&lt;div class="el-panel el-silver"&gt;
+    &lt;pre&gt;
+        &lt;code class="el-code"&gt;
+            &lt;!-- code --&gt;
+        &lt;/code&gt;
+    &lt;/pre&gt;
+&lt;/div&gt;
+			</code>
+		</pre>
+		<p>if you want to highlight the code , you need to use hight.js as blow	</p>
+		<pre><code>
+&lt;!-- load the css file --&gt;		
+&lt;link rel="stylesheet" type="text/css" href="./assets/css/sublime.css"&gt;
+&lt;!-- import the highlight.min.js--&gt;		
+&lt;script type="text/javascript" src="./assets/js/highlight.min.js"&gt;&lt;/script&gt;
+&lt;!-- init the hljs object--&gt;		
+&lt;script>hljs.initHighlightingOnLoad();&lt;/script&gt;
+		</code></pre>
+
+
+		<h1>.el-box-[light|shadow]</h1>
+		<div class="el-panel el-silver">
+			<div class="el-bar el-bright el-box-shadow">
+				This is a bright bar with box-shadow
+			</div>
+		</div>
+		
+		<pre><code class="el-code">
+&lt;!-- el-box-shadow --&gt;
+&lt;div class="el-panel el-silver"&gt;
+    &lt;div class="el-bar el-bright el-box-shadow"&gt;
+        This is a bright bar with box-shadow
+    &lt;/div&gt;
+&lt;/div&gt;
+		</code></pre>
+
+		<div class="el-panel el-night">
+			<div class="el-bar el-dark el-box-light">
+				This is a dark bar with box-light
+			</div>
+		</div>
+
+		<pre><code class="el-code">
+&lt;!-- el-box-light --&gt;
+&lt;div class="el-panel el-silver"&gt;
+    &lt;div class="el-bar el-bright el-box-light"&gt;
+        This is a dark bar with box-light
+    &lt;/div&gt;
+&lt;/div&gt;
+		</code></pre>
+		<br/>
+
+		<h1>.el-text-[light|shadow]</h1>
+		<div class="el-panel el-silver">
+			<p class="el-text-shadow el-white">This is text with shadow</p>
+		</div>
+		<pre><code class="el-code">
+&lt;!-- el-text-shadow --&gt;
+&lt;div class="el-panel el-silver"&gt;
+    &lt;p class="el-text-shadow el-white"&gt;This is text with shadow&lt;/p&gt;
+&lt;/div&gt;
+		</code></pre>
+		<div class="el-panel el-night">
+			<p class="el-text-light el-white">This is text with light</p>
+		</div>
+		<pre><code class="el-code">
+&lt;!-- el-text-light --&gt;
+&lt;div class="el-panel el-silver"&gt;
+    &lt;p class="el-text-light el-black"&gt;This is text with light&lt;/p&gt;
+&lt;/div&gt;
+		</code></pre>
+		<br/>
+	</div>
+	
+	<div class="el-cover el-night">
+		<div align="right" class="el-container">
+				<br>
+				<p class="el-middle"><a href="../">Home</a> | <a href="https://github.com/leeyee11">Github</a> | <a href="../profile">Profile</a></p>
+				<p class="el-small">© 2018 LeeYee, Licensed under MIT license.</p>
+				<br>
+				<br>
+		</div>
+	</div>
+
+</body>
+</html>
+
+<script type="text/javascript" src="./assets/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
